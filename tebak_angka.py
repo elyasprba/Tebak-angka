@@ -1,21 +1,23 @@
 from random import randint
 
 #Tampilan awal saat program jalan
-print('*' * 50)
-print('PERMAINAN TEBAK ANGKA')
-print('*' * 50)
+print('=' * 50)
+print('===============PERMAINAN TEBAK ANGKA==============')
+print('=' * 50)
+
+print('PERINGATAN BACA INSTRUKSI DENGAN BAIK')
+print('1. Input harus berupa angka!')
+print('2. Pikirkan angka dari 1 - 50')
+print('3. Silahkan tebak angka yang program pikirkan')
 
 # Inisialisai
 angka = randint(1,50)
 kesempatan = 10
 ulang = True
-
-print('Pikirkan angka dari 1 - 50 ')
-print('Silahkan tebak angka yang program pikirkan')
-print('Input harus berupa angka!')
+print()
 
 while ulang:
-    print(f'Kesempatan kamu saat ini tinggal {kesempatan}')
+    print(f'Kamu mempunyai kesempatan sebanyak {kesempatan}')
     if kesempatan > 0:
         tebak = input('Masukan tebakan kamu : ')
         if tebak.isnumeric():
