@@ -29,8 +29,8 @@ while ulang:
                 kesempatan -= 1
                 print('Tebakan kamu terlalu kecil, kesempatan kamu dikurangi 1 ')
             else:
-                print('Selamat!, Tebakan kamu benar')
-                print(f'Kesempatan kamu {kesempatan}')
+                print(f'Selamat! Tebakan kamu benar, sisa kesempatanmu masih ada {kesempatan}')
+                # print(f'Kamu masih mempunyai {kesempatan}')
                 ulang = False
             print()
         else:
@@ -42,6 +42,7 @@ while ulang:
     else:
         print()
         print('GAME SELESAI')
-        print(f'Kesempatan kamu sisa {kesempatan}')
+        print(f'Kesempatan yang diberikan sudah habis {kesempatan}')
+        print('Terima Kasih!')
         ulang = False
 
